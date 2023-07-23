@@ -1,0 +1,4 @@
+# Ignore build directories
+chip8-c/build
+chip8-c++/build
+chip8-rust/target

@@ -1,0 +1,11 @@
+A basic implementation of the CHIP-8 spec as defined by the Wikipedia article (https://en.wikipedia.org/wiki/CHIP-8) in multiple languages.
+
+The current implementations exist in Rust, C++ and C, and is intended as a learning exercise for getting into emulation development by illustrating basic emulator design philosophies that can be used outside of simply CHIP-8 emulation, such as core and frontend separation. It's also intended as a basic introduction to using your programming language for emulation as well as the CHIP-8 spec.
+
+Each implementation will contain documentation for what it does and why it does it with the intention of allowing the reader to reimplement it on their own with understanding of why and how, without feeling the need to "copy magic code" from the implementation. The implementations are designed to be analyzed with the intention of learning about the CHIP-8 and the respective programming language, and not to be redistributed.
+
+Each respective language's implementation can be found under `chip8-*` where `*` is the folder of the language's name (the C implementation exists under the `chip8-c` folder, and the Rust under `chip8-rust`, etc), and each implementation is self-contained, meaning it doesn't need anything outside of its folder to work, overlooking system dependencies. Every system dependency will be listed in each respective readme of the implementation. All implementations will contain a `build.sh` and `build.bat` which contains the steps to build or the implementation. The .sh files are for Linux users and the .bat files are for Windows users. The script files are intended to be ran from the directory they exist in, and aren't designed with running them from another directory in mind. Instructions to run each executable exists within each individual implementation directory.
+
+### Prerequisite knowledge 
+> You should understand binary and hexadecimal numbers.
+> You should understand the basic syntax of the language you're interested in, things like binary operations and such that is relevant for the emulator will be explained. 
